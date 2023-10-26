@@ -37,14 +37,15 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-
+The first command will make test the active branch, or the one that the head pointer points to. 
+The second command will take that active test branch and point it to the commit that top_N points to. This enacts the changes made within the top_N branch into the test branch
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
 git checkout top_ten
 git merge test
 ```
-
+This will make the head pointer point to the top_ten branch, and then top_ten will point to the same commit that test points to, making the changes that were made within the test branch mapped onto the top_ten branch. This procuded a merge conflict error.
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
@@ -52,3 +53,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+This will make the head pointer point to the test branch, then append the commits belonging to the top_ten branch to the test branch, then append all of the branches belonging to the top_N branch to the (new version of the) test branch. 

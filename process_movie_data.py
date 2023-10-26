@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-# A script that imports movie data and finds the top-5 highest grossing movies
+# A script that imports movie data and finds the top-N highest grossing movies
 import csv
 
 
@@ -35,4 +35,4 @@ def find_top_N(filename, n):
 # Movie data comes from "Movie Gross and Ratings" dataset on Kaggle by Yashwanth Sharaf
 # https://www.kaggle.com/datasets/thedevastator/movie-gross-and-ratings-from-1989-to-2014
 if __name__ == "__main__":
-    find_top_N("Movies_gross_rating.csv", 5)
+    find_top_N("Movies_gross_rating.csv", 10)
