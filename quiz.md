@@ -10,13 +10,13 @@ long as you list those resources (e.g. peers, websites, etc.)
 xanda_0000_movie_processing?
 (For this and future questions, the first 5 characters is plenty - neither
 Git nor I need the whole SHA.)
-
+9b257
 2. What is the SHA for the last commit associated with line 9 of this file?
-
+b2ed3
 3. What did line 12 of this file say in commit d1d83?
-
+"Git nor I need the whole SHA.)"
 4. What changed between commit e474c and 82045?
-
+Edits were made to the process_movie_data.py file to change the assignments of gross_sort to lambda x : int(x["Gross"]) instead of lambda x : x["Gross"], and top_five to rows[:-6:-1] instead of rows[:-5:-1].
 ## Predicting merges
 
 Assume at the start of each of these three questions that your
